@@ -1,0 +1,10 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/math/pj', methods=['GET'])
+def hello_world():
+    return 'Joyeux anniv Leny!!!!!!!!'
+
+if __name__ == '__main__':
+    app.run(debug=True,port=8080)
